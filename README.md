@@ -65,3 +65,7 @@ class SocketConnection():
 ```
 The transactions will contain basic information such as the sender name, timestamp, recpient name, amount sent and the exchange kei in which they used
 This part of the project is still in development..
+
+#Why Python
+One of pivotal factors to why I chose to implement python in this application is simply because how light-weight and easy it is to support hashing libraries and convert huge chinks of data into ordered JSON form. Also it is easy to have the socket listening port available to support the "mock" peer-to-peer connections.
+
