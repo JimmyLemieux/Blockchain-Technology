@@ -29,6 +29,7 @@ def create_block(self,index,timestamp):
 	 block_string = json.dumps(block,sort_keys=True).encode()
 	 return hashlib.sha256(block_string).hexdigest()
 ```
+
 #Mining
 The mining network is currently a work in progress. For now the mining network would be ran over a p2p network with a socket. The purpose of the miners is to hash all the transactions that are being made in the current block. These transactions are hashed into one single transaction called the *merkle root*
 ![MERKLEROOT](https://i.stack.imgur.com/ExJSC.png)
@@ -66,6 +67,6 @@ class SocketConnection():
 The transactions will contain basic information such as the sender name, timestamp, recpient name, amount sent and the exchange kei in which they used
 This part of the project is still in development..
 
-#Why Python
+#Why-Python
 One of pivotal factors to why I chose to implement python in this application is simply because how light-weight and easy it is to support hashing libraries and convert huge chinks of data into ordered JSON form. Also it is easy to have the socket listening port available to support the "mock" peer-to-peer connections.
 
